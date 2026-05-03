@@ -626,6 +626,18 @@ require('lazy').setup({
               vim.lsp.inlay_hint.enable(not vim.lsp.inlay_hint.is_enabled { bufnr = event.buf })
             end, '[T]oggle Inlay [H]ints')
           end
+
+          -- Diagnostic navigation and float (local to buffer)
+          map('<leader>e', vim.diagnostic.open_float, 'Open Diagnostic Float')
+          map('[d', vim.diagnostic.goto_prev, 'Prev Diagnostic')
+          map(']d', vim.diagnostic.goto_next, 'Next Diagnostic')
+          -- Error-only jumps
+          map('[E', function()
+            vim.diagnostic.goto_prev { severity = vim.diagnostic.severity.ERROR }
+          end, 'Prev ERROR')
+          map(']E', function()
+            vim.diagnostic.goto_next { severity = vim.diagnostic.severity.ERROR }
+          end, 'Next ERROR')
         end,
       })
 
@@ -634,8 +646,24 @@ require('lazy').setup({
       -- See :help vim.diagnostic.Opts
       vim.diagnostic.config {
         severity_sort = true,
-        float = { border = 'rounded', source = 'if_many' },
+
+        -- Floating diagnostic window (opened with vim.diagnostic.open_float)
+        float = {
+          border = 'rounded',
+          source = 'always', -- show the source (e.g. eslint, pyright)
+          format = function(d)
+            -- Prefer LSP-provided code, fall back to d.code
+            local code = (d.user_data and d.user_data.lsp and d.user_data.lsp.code) or d.code
+            if code then
+              return string.format('%s [%s]\n\n(%s)', d.message, code, d.source or 'unknown')
+            end
+            return string.format('%s\n\n(%s)', d.message, d.source or 'unknown')
+          end,
+        },
+
         underline = { severity = vim.diagnostic.severity.ERROR },
+
+        -- buffer signs
         signs = vim.g.have_nerd_font and {
           text = {
             [vim.diagnostic.severity.ERROR] = '󰅚 ',
@@ -644,17 +672,19 @@ require('lazy').setup({
             [vim.diagnostic.severity.HINT] = '󰌶 ',
           },
         } or {},
+
+        -- Inline virtual text: include source and code. To reduce noise, show only WARN+ERROR.
         virtual_text = {
-          source = 'if_many',
           spacing = 2,
-          format = function(diagnostic)
-            local diagnostic_message = {
-              [vim.diagnostic.severity.ERROR] = diagnostic.message,
-              [vim.diagnostic.severity.WARN] = diagnostic.message,
-              [vim.diagnostic.severity.INFO] = diagnostic.message,
-              [vim.diagnostic.severity.HINT] = diagnostic.message,
-            }
-            return diagnostic_message[diagnostic.severity]
+          source = true,
+          -- Only show virtual text for warn+error to avoid clutter; remove `severity` entry if you want all severities.
+          severity = { min = vim.diagnostic.severity.WARN },
+          format = function(d)
+            local src = d.source and (' ' .. d.source) or ''
+            local code = (d.user_data and d.user_data.lsp and d.user_data.lsp.code) or d.code
+            local code_str = code and (' [' .. tostring(code) .. ']') or ''
+            -- message + [code] + source
+            return d.message .. code_str .. src
           end,
         },
       }
@@ -995,6 +1025,32 @@ require('lazy').setup({
         return '%2l:%-2v'
       end
 
+      -- Diagnostic counts provider for mini.statusline
+      local function diag_counts()
+        local counts =
+          { [vim.diagnostic.severity.ERROR] = 0, [vim.diagnostic.severity.WARN] = 0, [vim.diagnostic.severity.INFO] = 0, [vim.diagnostic.severity.HINT] = 0 }
+        for _, d in ipairs(vim.diagnostic.get(0)) do
+          counts[d.severity] = counts[d.severity] + 1
+        end
+        local parts = {}
+        if counts[vim.diagnostic.severity.ERROR] > 0 then
+          table.insert(parts, 'E:' .. counts[vim.diagnostic.severity.ERROR])
+        end
+        if counts[vim.diagnostic.severity.WARN] > 0 then
+          table.insert(parts, 'W:' .. counts[vim.diagnostic.severity.WARN])
+        end
+        if counts[vim.diagnostic.severity.INFO] > 0 then
+          table.insert(parts, 'I:' .. counts[vim.diagnostic.severity.INFO])
+        end
+        if counts[vim.diagnostic.severity.HINT] > 0 then
+          table.insert(parts, 'H:' .. counts[vim.diagnostic.severity.HINT])
+        end
+        return table.concat(parts, ' ')
+      end
+
+      -- Hook the diagnostics into the statusline as its own section
+      statusline.section_diagnostics = diag_counts
+
       -- ... and there is more!
       --  Check out: https://github.com/echasnovski/mini.nvim
     end,
@@ -1051,6 +1107,7 @@ require('lazy').setup({
   -- Or use telescope!
   -- In normal mode type `<space>sh` then write `lazy.nvim-plugin`
   -- you can continue same window with `<space>sr` which resumes last telescope search
+  asdf,
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the

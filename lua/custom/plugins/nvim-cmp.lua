@@ -6,6 +6,11 @@ return {
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-buffer',
     'hrsh7th/cmp-path',
+    -- Copilot integration: provide source named 'copilot'
+    'zbirenbaum/copilot-cmp',
+    'zbirenbaum/copilot.lua',
+    -- luasnip completion source (luasnip is configured in its own plugin file)
+    'saadparwaiz1/cmp_luasnip',
   },
   -- Not all LSP servers add brackets when completing a function.
   -- To better deal with this, LazyVim adds a custom option to cmp,
@@ -16,10 +21,10 @@ return {
   --   auto_brackets = { "python" }
   -- }
   -- ```
+  -- opts can be a function returning the cmp configuration table
   opts = function()
     vim.api.nvim_set_hl(0, 'CmpGhostText', { link = 'Comment', default = true })
     local cmp = require 'cmp'
-    local defaults = require 'cmp.config.default'()
     local auto_select = true
     return {
       auto_brackets = {}, -- configure any filetype to auto add brackets
@@ -51,5 +56,15 @@ return {
         -- { name = 'neorg' },
       },
     }
+  end,
+
+  -- Ensure copilot-cmp is initialized and then apply the cmp setup
+  config = function(_, opts)
+    -- copilot_cmp provides the 'copilot' completion source
+    pcall(function()
+      require('copilot_cmp').setup()
+    end) -- ignore error if not installed yet
+    local cmp = require 'cmp'
+    cmp.setup(opts)
   end,
 }
