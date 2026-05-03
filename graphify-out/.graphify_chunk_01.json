@@ -1,0 +1,209 @@
+{
+  "nodes": [
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_init.lua_init",
+      "label": "init",
+      "file_type": "code",
+      "source_file": "/home/miasmaofplasma/.config/nvim/init.lua",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_README.md_README",
+      "label": "README",
+      "file_type": "document",
+      "source_file": "/home/miasmaofplasma/.config/nvim/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_LICENSE.md_LICENSE",
+      "label": "LICENSE",
+      "file_type": "document",
+      "source_file": "/home/miasmaofplasma/.config/nvim/LICENSE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_AGENTS.md_AGENTS",
+      "label": "AGENTS",
+      "file_type": "document",
+      "source_file": "/home/miasmaofplasma/.config/nvim/AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_lua_custom_snippets_markdown.lua_markdown",
+      "label": "markdown",
+      "file_type": "code",
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/custom/snippets/markdown.lua",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_lua_custom_snippets_telekasten.lua_telekasten",
+      "label": "telekasten",
+      "file_type": "code",
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/custom/snippets/telekasten.lua",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_lua_utils_buffer_find.lua_buffer_find",
+      "label": "buffer_find",
+      "file_type": "code",
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/utils/buffer_find.lua",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_lua_utils_buffer_hooks.lua_buffer_hooks",
+      "label": "buffer_hooks",
+      "file_type": "code",
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/utils/buffer_hooks.lua",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_lua_utils_keymaps.lua_keymaps",
+      "label": "keymaps",
+      "file_type": "code",
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/utils/keymaps.lua",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_lua_utils_prompts.lua_prompts",
+      "label": "prompts",
+      "file_type": "code",
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/utils/prompts.lua",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "_home_miasmaofplasma_.config_nvim_init.lua_init",
+      "target": "_home_miasmaofplasma_.config_nvim_README.md_README",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/home/miasmaofplasma/.config/nvim/init.lua",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_home_miasmaofplasma_.config_nvim_README.md_README",
+      "target": "_home_miasmaofplasma_.config_nvim_LICENSE.md_LICENSE",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/home/miasmaofplasma/.config/nvim/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_home_miasmaofplasma_.config_nvim_LICENSE.md_LICENSE",
+      "target": "_home_miasmaofplasma_.config_nvim_AGENTS.md_AGENTS",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/home/miasmaofplasma/.config/nvim/LICENSE.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_home_miasmaofplasma_.config_nvim_AGENTS.md_AGENTS",
+      "target": "_home_miasmaofplasma_.config_nvim_lua_custom_snippets_markdown.lua_markdown",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/home/miasmaofplasma/.config/nvim/AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_home_miasmaofplasma_.config_nvim_lua_custom_snippets_markdown.lua_markdown",
+      "target": "_home_miasmaofplasma_.config_nvim_lua_custom_snippets_telekasten.lua_telekasten",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/custom/snippets/markdown.lua",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_home_miasmaofplasma_.config_nvim_lua_custom_snippets_telekasten.lua_telekasten",
+      "target": "_home_miasmaofplasma_.config_nvim_lua_utils_buffer_find.lua_buffer_find",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/custom/snippets/telekasten.lua",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_home_miasmaofplasma_.config_nvim_lua_utils_buffer_find.lua_buffer_find",
+      "target": "_home_miasmaofplasma_.config_nvim_lua_utils_buffer_hooks.lua_buffer_hooks",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/utils/buffer_find.lua",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_home_miasmaofplasma_.config_nvim_lua_utils_buffer_hooks.lua_buffer_hooks",
+      "target": "_home_miasmaofplasma_.config_nvim_lua_utils_keymaps.lua_keymaps",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/utils/buffer_hooks.lua",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_home_miasmaofplasma_.config_nvim_lua_utils_keymaps.lua_keymaps",
+      "target": "_home_miasmaofplasma_.config_nvim_lua_utils_prompts.lua_prompts",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/utils/keymaps.lua",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 1000,
+  "output_tokens": 500
+}

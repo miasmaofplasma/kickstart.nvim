@@ -1,0 +1,767 @@
+{
+  "nodes": [
+    {
+      "id": "init_lua",
+      "label": "init.lua",
+      "file_type": "code",
+      "source_file": "init.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "nvim_init_client_supports_method",
+      "label": "client_supports_method()",
+      "file_type": "code",
+      "source_file": "init.lua",
+      "source_location": "L582"
+    },
+    {
+      "id": "lua_custom_plugins_init_lua",
+      "label": "init.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/init.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_persisted_lua",
+      "label": "persisted.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/persisted.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_workspaces_lua",
+      "label": "workspaces.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/workspaces.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_crates_lua",
+      "label": "crates.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/crates.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "plugins_crates_setup_keybindings",
+      "label": "setup_keybindings()",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/crates.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_neorg_lua",
+      "label": "neorg.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/neorg.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_luasnip_lua",
+      "label": "luasnip.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/luasnip.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_nvim_window_lua",
+      "label": "nvim-window.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/nvim-window.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_nvim_cmp_lua",
+      "label": "nvim-cmp.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/nvim-cmp.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_trouble_lua",
+      "label": "trouble.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/trouble.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_telekasten_lua",
+      "label": "telekasten.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/telekasten.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "plugins_telekasten_sub_luasnip",
+      "label": "sub_luasnip()",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/telekasten.lua",
+      "source_location": "L2"
+    },
+    {
+      "id": "lua_custom_plugins_nvim_dap_ui_lua",
+      "label": "nvim-dap-ui.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/nvim-dap-ui.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_rustacean_lua",
+      "label": "rustacean.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/rustacean.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_render_markdown_lua",
+      "label": "render-markdown.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/render-markdown.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_neotest_lua",
+      "label": "neotest.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/neotest.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "plugins_neotest_set_up_keybinding",
+      "label": "set_up_keybinding()",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/neotest.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "plugins_neotest_tear_down_keybindings",
+      "label": "tear_down_keybindings()",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/neotest.lua",
+      "source_location": "L2"
+    },
+    {
+      "id": "lua_custom_plugins_copilot_cmp_lua",
+      "label": "copilot-cmp.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/copilot-cmp.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_flash_lua",
+      "label": "flash.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/flash.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_treesitter_lua",
+      "label": "treesitter.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/treesitter.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_nvim_dap_lua",
+      "label": "nvim-dap.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/nvim-dap.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_windows_lua",
+      "label": "windows.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/windows.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_diagflow_lua",
+      "label": "diagflow.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/diagflow.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_copilot_lua",
+      "label": "copilot.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/copilot.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_wtf_lua",
+      "label": "wtf.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/wtf.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_codecompanion_disabled_lua",
+      "label": "codecompanion.disabled.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/codecompanion.disabled.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_opencode_lua",
+      "label": "opencode.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/opencode.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_plugins_lsp_nixd_lua",
+      "label": "nixd.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/plugins/lsp/nixd.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_snippets_telekasten_lua",
+      "label": "telekasten.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/snippets/markdown.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_custom_snippets_telekasten_lua",
+      "label": "telekasten.lua",
+      "file_type": "code",
+      "source_file": "lua/custom/snippets/telekasten.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_kickstart_health_lua",
+      "label": "health.lua",
+      "file_type": "code",
+      "source_file": "lua/kickstart/health.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_kickstart_plugins_autopairs_lua",
+      "label": "autopairs.lua",
+      "file_type": "code",
+      "source_file": "lua/kickstart/plugins/autopairs.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_kickstart_plugins_debug_lua",
+      "label": "debug.lua",
+      "file_type": "code",
+      "source_file": "lua/kickstart/plugins/debug.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_kickstart_plugins_gitsigns_lua",
+      "label": "gitsigns.lua",
+      "file_type": "code",
+      "source_file": "lua/kickstart/plugins/gitsigns.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "plugins_gitsigns_map",
+      "label": "map()",
+      "file_type": "code",
+      "source_file": "lua/kickstart/plugins/gitsigns.lua",
+      "source_location": "L12"
+    },
+    {
+      "id": "lua_kickstart_plugins_indent_line_lua",
+      "label": "indent_line.lua",
+      "file_type": "code",
+      "source_file": "lua/kickstart/plugins/indent_line.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_kickstart_plugins_neo_tree_lua",
+      "label": "neo-tree.lua",
+      "file_type": "code",
+      "source_file": "lua/kickstart/plugins/neo-tree.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_kickstart_plugins_lint_lua",
+      "label": "lint.lua",
+      "file_type": "code",
+      "source_file": "lua/kickstart/plugins/lint.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "lua_utils_buffer_find_lua",
+      "label": "buffer_find.lua",
+      "file_type": "code",
+      "source_file": "lua/utils/buffer_find.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "utils_buffer_find_m_get_all_matches",
+      "label": "M.get_all_matches()",
+      "file_type": "code",
+      "source_file": "lua/utils/buffer_find.lua",
+      "source_location": "L3"
+    },
+    {
+      "id": "lua_utils_buffer_hooks_lua",
+      "label": "buffer_hooks.lua",
+      "file_type": "code",
+      "source_file": "lua/utils/buffer_hooks.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "utils_buffer_hooks_m_buffer_hook_enter_exit",
+      "label": "M.buffer_hook_enter_exit()",
+      "file_type": "code",
+      "source_file": "lua/utils/buffer_hooks.lua",
+      "source_location": "L7"
+    },
+    {
+      "id": "utils_buffer_hooks_m_on_file_save",
+      "label": "M.on_file_save()",
+      "file_type": "code",
+      "source_file": "lua/utils/buffer_hooks.lua",
+      "source_location": "L33"
+    },
+    {
+      "id": "lua_utils_keymaps_lua",
+      "label": "keymaps.lua",
+      "file_type": "code",
+      "source_file": "lua/utils/keymaps.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "utils_keymaps_remove_map_func",
+      "label": "remove_map_func()",
+      "file_type": "code",
+      "source_file": "lua/utils/keymaps.lua",
+      "source_location": "L3"
+    },
+    {
+      "id": "utils_keymaps_m_map",
+      "label": "M.map()",
+      "file_type": "code",
+      "source_file": "lua/utils/keymaps.lua",
+      "source_location": "L9"
+    },
+    {
+      "id": "lua_utils_prompts_lua",
+      "label": "prompts.lua",
+      "file_type": "code",
+      "source_file": "lua/utils/prompts.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "after_ftplugin_telekasten_lua",
+      "label": "telekasten.lua",
+      "file_type": "code",
+      "source_file": "after/ftplugin/telekasten.lua",
+      "source_location": "L1"
+    },
+    {
+      "id": "after_ftplugin_rust_lua",
+      "label": "rust.lua",
+      "file_type": "code",
+      "source_file": "after/ftplugin/rust.lua",
+      "source_location": "L1"
+    }
+  ],
+  "edges": [
+    {
+      "source": "init_lua",
+      "target": "builtin",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "init.lua",
+      "source_location": "427",
+      "weight": 1.0
+    },
+    {
+      "source": "init_lua",
+      "target": "nvim_init_client_supports_method",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "init.lua",
+      "source_location": "L582",
+      "weight": 1.0
+    },
+    {
+      "source": "init_lua",
+      "target": "cmp_nvim_lsp",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "init.lua",
+      "source_location": "667",
+      "weight": 1.0
+    },
+    {
+      "source": "init_lua",
+      "target": "statusline",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "init.lua",
+      "source_location": "986",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_persisted_lua",
+      "target": "persisted",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/custom/plugins/persisted.lua",
+      "source_location": "5",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_crates_lua",
+      "target": "plugins_crates_setup_keybindings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lua/custom/plugins/crates.lua",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_luasnip_lua",
+      "target": "luasnip",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/custom/plugins/luasnip.lua",
+      "source_location": "9",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_nvim_cmp_lua",
+      "target": "cmp",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/custom/plugins/nvim-cmp.lua",
+      "source_location": "21",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_nvim_cmp_lua",
+      "target": "default",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/custom/plugins/nvim-cmp.lua",
+      "source_location": "22",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_telekasten_lua",
+      "target": "plugins_telekasten_sub_luasnip",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lua/custom/plugins/telekasten.lua",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_telekasten_lua",
+      "target": "telekasten",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/custom/plugins/telekasten.lua",
+      "source_location": "40",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_telekasten_lua",
+      "target": "buffer_hooks",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/custom/plugins/telekasten.lua",
+      "source_location": "52",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_rustacean_lua",
+      "target": "mason-registry",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/custom/plugins/rustacean.lua",
+      "source_location": "19",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_rustacean_lua",
+      "target": "config",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/custom/plugins/rustacean.lua",
+      "source_location": "26",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_neotest_lua",
+      "target": "plugins_neotest_set_up_keybinding",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lua/custom/plugins/neotest.lua",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_neotest_lua",
+      "target": "plugins_neotest_tear_down_keybindings",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lua/custom/plugins/neotest.lua",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_neotest_lua",
+      "target": "neotest",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/custom/plugins/neotest.lua",
+      "source_location": "15",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_flash_lua",
+      "target": "flash",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/custom/plugins/flash.lua",
+      "source_location": "5",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_nvim_dap_lua",
+      "target": "dap",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/custom/plugins/nvim-dap.lua",
+      "source_location": "9",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_copilot_lua",
+      "target": "copilot",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/custom/plugins/copilot.lua",
+      "source_location": "6",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_codecompanion_disabled_lua",
+      "target": "diff",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/custom/plugins/codecompanion.disabled.lua",
+      "source_location": "10",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_codecompanion_disabled_lua",
+      "target": "codecompanion",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/custom/plugins/codecompanion.disabled.lua",
+      "source_location": "19",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_plugins_codecompanion_disabled_lua",
+      "target": "prompts",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/custom/plugins/codecompanion.disabled.lua",
+      "source_location": "20",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_snippets_telekasten_lua",
+      "target": "luasnip",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/custom/snippets/markdown.lua",
+      "source_location": "2",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_custom_snippets_telekasten_lua",
+      "target": "luasnip",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/custom/snippets/telekasten.lua",
+      "source_location": "2",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_kickstart_plugins_debug_lua",
+      "target": "dap",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/kickstart/plugins/debug.lua",
+      "source_location": "81",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_kickstart_plugins_debug_lua",
+      "target": "dapui",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/kickstart/plugins/debug.lua",
+      "source_location": "82",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_kickstart_plugins_gitsigns_lua",
+      "target": "gitsigns",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/kickstart/plugins/gitsigns.lua",
+      "source_location": "10",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_kickstart_plugins_gitsigns_lua",
+      "target": "plugins_gitsigns_map",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lua/kickstart/plugins/gitsigns.lua",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_kickstart_plugins_neo_tree_lua",
+      "target": "utils",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/kickstart/plugins/neo-tree.lua",
+      "source_location": "43",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_kickstart_plugins_neo_tree_lua",
+      "target": "avante",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/kickstart/plugins/neo-tree.lua",
+      "source_location": "45",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_kickstart_plugins_lint_lua",
+      "target": "lint",
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lua/kickstart/plugins/lint.lua",
+      "source_location": "7",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_utils_buffer_find_lua",
+      "target": "utils_buffer_find_m_get_all_matches",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lua/utils/buffer_find.lua",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_utils_buffer_hooks_lua",
+      "target": "utils_buffer_hooks_m_buffer_hook_enter_exit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lua/utils/buffer_hooks.lua",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_utils_buffer_hooks_lua",
+      "target": "utils_buffer_hooks_m_on_file_save",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lua/utils/buffer_hooks.lua",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_utils_keymaps_lua",
+      "target": "utils_keymaps_remove_map_func",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lua/utils/keymaps.lua",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "lua_utils_keymaps_lua",
+      "target": "utils_keymaps_m_map",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lua/utils/keymaps.lua",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "utils_keymaps_m_map",
+      "target": "utils_keymaps_remove_map_func",
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "lua/utils/keymaps.lua",
+      "source_location": "L11",
+      "weight": 1.0
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

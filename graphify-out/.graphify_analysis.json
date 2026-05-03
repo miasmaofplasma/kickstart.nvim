@@ -1,0 +1,368 @@
+{
+  "communities": {
+    "0": [
+      "_home_miasmaofplasma_.config_nvim_AGENTS.md_AGENTS",
+      "_home_miasmaofplasma_.config_nvim_LICENSE.md_LICENSE",
+      "_home_miasmaofplasma_.config_nvim_README.md_README",
+      "_home_miasmaofplasma_.config_nvim_init.lua_init",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_snippets_markdown.lua_markdown",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_snippets_telekasten.lua_telekasten",
+      "_home_miasmaofplasma_.config_nvim_lua_utils_buffer_find.lua_buffer_find",
+      "_home_miasmaofplasma_.config_nvim_lua_utils_buffer_hooks.lua_buffer_hooks",
+      "_home_miasmaofplasma_.config_nvim_lua_utils_keymaps.lua_keymaps",
+      "_home_miasmaofplasma_.config_nvim_lua_utils_prompts.lua_prompts"
+    ],
+    "1": [
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_crates.lua_crates",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_init.lua_init",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_luasnip.lua_luasnip",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_neorg.lua_neorg",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_nvim-cmp.lua_nvim-cmp",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_nvim-window.lua_nvim-window",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_persisted.lua_persisted",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_telekasten.lua_telekasten",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_trouble.lua_trouble",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_workspaces.lua_workspaces"
+    ],
+    "2": [
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_copilot-cmp.lua_copilot-cmp",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_diagflow.lua_diagflow",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_flash.lua_flash",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_neotest.lua_neotest",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_nvim-dap-ui.lua_nvim-dap-ui",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_nvim-dap.lua_nvim-dap",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_render-markdown.lua_render-markdown",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_rustacean.lua_rustacean",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_treesitter.lua_treesitter",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_windows.lua_windows"
+    ],
+    "3": [
+      "_home_miasmaofplasma_.config_nvim_doc_kickstart.txt_kickstart",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_lsp_nixd.lua_nixd",
+      "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_autopairs.lua_autopairs",
+      "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_debug.lua_debug",
+      "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_gitsigns.lua_gitsigns",
+      "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_indent_line.lua_indent_line",
+      "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_lint.lua_lint",
+      "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_neo-tree.lua_neo-tree"
+    ],
+    "4": [
+      "_home_miasmaofplasma_.config_nvim_after_ftplugin_rust.lua_rust",
+      "_home_miasmaofplasma_.config_nvim_after_ftplugin_telekasten.lua_telekasten",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_codecompanion.disabled.lua_codecompanion.disabled",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_copilot.lua_copilot",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_opencode.lua_opencode",
+      "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_wtf.lua_wtf",
+      "_home_miasmaofplasma_.config_nvim_lua_kickstart_health.lua_health"
+    ],
+    "5": [
+      "lua_custom_plugins_neotest_lua",
+      "plugins_neotest_set_up_keybinding",
+      "plugins_neotest_tear_down_keybindings"
+    ],
+    "6": [
+      "lua_utils_buffer_hooks_lua",
+      "utils_buffer_hooks_m_buffer_hook_enter_exit",
+      "utils_buffer_hooks_m_on_file_save"
+    ],
+    "7": [
+      "lua_utils_keymaps_lua",
+      "utils_keymaps_m_map",
+      "utils_keymaps_remove_map_func"
+    ],
+    "8": [
+      "init_lua",
+      "nvim_init_client_supports_method"
+    ],
+    "9": [
+      "lua_custom_plugins_crates_lua",
+      "plugins_crates_setup_keybindings"
+    ],
+    "10": [
+      "lua_custom_plugins_telekasten_lua",
+      "plugins_telekasten_sub_luasnip"
+    ],
+    "11": [
+      "lua_kickstart_plugins_gitsigns_lua",
+      "plugins_gitsigns_map"
+    ],
+    "12": [
+      "lua_utils_buffer_find_lua",
+      "utils_buffer_find_m_get_all_matches"
+    ],
+    "13": [
+      "lua_custom_plugins_init_lua"
+    ],
+    "14": [
+      "lua_custom_plugins_persisted_lua"
+    ],
+    "15": [
+      "lua_custom_plugins_workspaces_lua"
+    ],
+    "16": [
+      "lua_custom_plugins_neorg_lua"
+    ],
+    "17": [
+      "lua_custom_plugins_luasnip_lua"
+    ],
+    "18": [
+      "lua_custom_plugins_nvim_window_lua"
+    ],
+    "19": [
+      "lua_custom_plugins_nvim_cmp_lua"
+    ],
+    "20": [
+      "lua_custom_plugins_trouble_lua"
+    ],
+    "21": [
+      "lua_custom_plugins_nvim_dap_ui_lua"
+    ],
+    "22": [
+      "lua_custom_plugins_rustacean_lua"
+    ],
+    "23": [
+      "lua_custom_plugins_render_markdown_lua"
+    ],
+    "24": [
+      "lua_custom_plugins_copilot_cmp_lua"
+    ],
+    "25": [
+      "lua_custom_plugins_flash_lua"
+    ],
+    "26": [
+      "lua_custom_plugins_treesitter_lua"
+    ],
+    "27": [
+      "lua_custom_plugins_nvim_dap_lua"
+    ],
+    "28": [
+      "lua_custom_plugins_windows_lua"
+    ],
+    "29": [
+      "lua_custom_plugins_diagflow_lua"
+    ],
+    "30": [
+      "lua_custom_plugins_copilot_lua"
+    ],
+    "31": [
+      "lua_custom_plugins_wtf_lua"
+    ],
+    "32": [
+      "lua_custom_plugins_codecompanion_disabled_lua"
+    ],
+    "33": [
+      "lua_custom_plugins_opencode_lua"
+    ],
+    "34": [
+      "lua_custom_plugins_lsp_nixd_lua"
+    ],
+    "35": [
+      "lua_custom_snippets_telekasten_lua"
+    ],
+    "36": [
+      "lua_kickstart_health_lua"
+    ],
+    "37": [
+      "lua_kickstart_plugins_autopairs_lua"
+    ],
+    "38": [
+      "lua_kickstart_plugins_debug_lua"
+    ],
+    "39": [
+      "lua_kickstart_plugins_indent_line_lua"
+    ],
+    "40": [
+      "lua_kickstart_plugins_neo_tree_lua"
+    ],
+    "41": [
+      "lua_kickstart_plugins_lint_lua"
+    ],
+    "42": [
+      "lua_utils_prompts_lua"
+    ],
+    "43": [
+      "after_ftplugin_telekasten_lua"
+    ],
+    "44": [
+      "after_ftplugin_rust_lua"
+    ]
+  },
+  "cohesion": {
+    "0": 0.2,
+    "1": 0.2,
+    "2": 0.2,
+    "3": 0.25,
+    "4": 0.29,
+    "5": 0.67,
+    "6": 0.67,
+    "7": 1.0,
+    "8": 1.0,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 1.0,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0,
+    "22": 1.0,
+    "23": 1.0,
+    "24": 1.0,
+    "25": 1.0,
+    "26": 1.0,
+    "27": 1.0,
+    "28": 1.0,
+    "29": 1.0,
+    "30": 1.0,
+    "31": 1.0,
+    "32": 1.0,
+    "33": 1.0,
+    "34": 1.0,
+    "35": 1.0,
+    "36": 1.0,
+    "37": 1.0,
+    "38": 1.0,
+    "39": 1.0,
+    "40": 1.0,
+    "41": 1.0,
+    "42": 1.0,
+    "43": 1.0,
+    "44": 1.0
+  },
+  "gods": [
+    {
+      "id": "utils_keymaps_remove_map_func",
+      "label": "remove_map_func()",
+      "degree": 2
+    },
+    {
+      "id": "utils_keymaps_m_map",
+      "label": "M.map()",
+      "degree": 2
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_README.md_README",
+      "label": "README",
+      "degree": 2
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_LICENSE.md_LICENSE",
+      "label": "LICENSE",
+      "degree": 2
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_AGENTS.md_AGENTS",
+      "label": "AGENTS",
+      "degree": 2
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_lua_custom_snippets_markdown.lua_markdown",
+      "label": "markdown",
+      "degree": 2
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_lua_custom_snippets_telekasten.lua_telekasten",
+      "label": "telekasten",
+      "degree": 2
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_lua_utils_buffer_find.lua_buffer_find",
+      "label": "buffer_find",
+      "degree": 2
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_lua_utils_buffer_hooks.lua_buffer_hooks",
+      "label": "buffer_hooks",
+      "degree": 2
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_lua_utils_keymaps.lua_keymaps",
+      "label": "keymaps",
+      "degree": 2
+    }
+  ],
+  "surprises": [
+    {
+      "source": "init",
+      "target": "README",
+      "source_files": [
+        "/home/miasmaofplasma/.config/nvim/init.lua",
+        "/home/miasmaofplasma/.config/nvim/README.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code \u2194 doc)"
+    },
+    {
+      "source": "AGENTS",
+      "target": "markdown",
+      "source_files": [
+        "/home/miasmaofplasma/.config/nvim/AGENTS.md",
+        "/home/miasmaofplasma/.config/nvim/lua/custom/snippets/markdown.lua"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (doc \u2194 code)"
+    },
+    {
+      "source": "lint",
+      "target": "kickstart",
+      "source_files": [
+        "/home/miasmaofplasma/.config/nvim/lua/kickstart/plugins/lint.lua",
+        "/home/miasmaofplasma/.config/nvim/doc/kickstart.txt"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; crosses file types (code \u2194 doc)"
+    },
+    {
+      "source": "telekasten",
+      "target": "nvim-dap-ui",
+      "source_files": [
+        "/home/miasmaofplasma/.config/nvim/lua/custom/plugins/telekasten.lua",
+        "/home/miasmaofplasma/.config/nvim/lua/custom/plugins/nvim-dap-ui.lua"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    },
+    {
+      "source": "diagflow",
+      "target": "copilot",
+      "source_files": [
+        "/home/miasmaofplasma/.config/nvim/lua/custom/plugins/diagflow.lua",
+        "/home/miasmaofplasma/.config/nvim/lua/custom/plugins/copilot.lua"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `README` (e.g. with `init` and `LICENSE`) actually correct?",
+      "why": "`README` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `LICENSE` (e.g. with `README` and `AGENTS`) actually correct?",
+      "why": "`LICENSE` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `AGENTS` (e.g. with `LICENSE` and `markdown`) actually correct?",
+      "why": "`AGENTS` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `init`, `prompts`, `init` to the rest of the system?",
+      "why": "6 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}

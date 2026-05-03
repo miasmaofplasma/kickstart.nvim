@@ -1,0 +1,167 @@
+{
+  "nodes": [
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_lsp_nixd.lua_nixd",
+      "label": "nixd",
+      "file_type": "code",
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/custom/plugins/lsp/nixd.lua",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_autopairs.lua_autopairs",
+      "label": "autopairs",
+      "file_type": "code",
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/kickstart/plugins/autopairs.lua",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_debug.lua_debug",
+      "label": "debug",
+      "file_type": "code",
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/kickstart/plugins/debug.lua",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_gitsigns.lua_gitsigns",
+      "label": "gitsigns",
+      "file_type": "code",
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/kickstart/plugins/gitsigns.lua",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_indent_line.lua_indent_line",
+      "label": "indent_line",
+      "file_type": "code",
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/kickstart/plugins/indent_line.lua",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_neo-tree.lua_neo-tree",
+      "label": "neo-tree",
+      "file_type": "code",
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/kickstart/plugins/neo-tree.lua",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_lint.lua_lint",
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/kickstart/plugins/lint.lua",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "_home_miasmaofplasma_.config_nvim_doc_kickstart.txt_kickstart",
+      "label": "kickstart",
+      "file_type": "document",
+      "source_file": "/home/miasmaofplasma/.config/nvim/doc/kickstart.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "_home_miasmaofplasma_.config_nvim_lua_custom_plugins_lsp_nixd.lua_nixd",
+      "target": "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_autopairs.lua_autopairs",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/custom/plugins/lsp/nixd.lua",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_autopairs.lua_autopairs",
+      "target": "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_debug.lua_debug",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/kickstart/plugins/autopairs.lua",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_debug.lua_debug",
+      "target": "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_gitsigns.lua_gitsigns",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/kickstart/plugins/debug.lua",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_gitsigns.lua_gitsigns",
+      "target": "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_indent_line.lua_indent_line",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/kickstart/plugins/gitsigns.lua",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_indent_line.lua_indent_line",
+      "target": "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_neo-tree.lua_neo-tree",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/kickstart/plugins/indent_line.lua",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_neo-tree.lua_neo-tree",
+      "target": "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_lint.lua_lint",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/kickstart/plugins/neo-tree.lua",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "_home_miasmaofplasma_.config_nvim_lua_kickstart_plugins_lint.lua_lint",
+      "target": "_home_miasmaofplasma_.config_nvim_doc_kickstart.txt_kickstart",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/home/miasmaofplasma/.config/nvim/lua/kickstart/plugins/lint.lua",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 1000,
+  "output_tokens": 500
+}

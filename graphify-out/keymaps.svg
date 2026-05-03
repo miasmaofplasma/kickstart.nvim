@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Visual cheat-sheet of custom Neovim keymaps (generated) -->
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1400" viewBox="0 0 1100 1400">
+  <style>
+    .title { font: bold 24px sans-serif; }
+    .subtitle { font: 14px sans-serif; fill: #555 }
+    .box { fill: #f7f9fc; stroke: #cbd5e1; stroke-width: 1.5 }
+    .box-heading { font: bold 16px sans-serif; fill: #0f172a }
+    .entry { font: 13px monospace; fill: #0f172a }
+    .desc { font: 12px sans-serif; fill: #334155 }
+  </style>
+
+  <rect width="1100" height="1400" fill="#ffffff"/>
+  <text x="40" y="48" class="title">Neovim Custom Keymaps — Visual Cheat‑Sheet</text>
+  <text x="40" y="74" class="subtitle">Location: ~/.config/nvim — visual summary of your custom mappings grouped by category</text>
+
+  <!-- Column 1 -->
+  <g transform="translate(40,120)">
+    <rect class="box" x="0" y="0" width="480" height="220" rx="8"/>
+    <text x="14" y="26" class="box-heading">Global / Utility</text>
+    <text x="14" y="52" class="entry">n  &lt;Esc&gt;    → clear search highlight</text>
+    <text x="14" y="72" class="entry">n  &lt;leader&gt;q → open diagnostic quickfix</text>
+    <text x="14" y="92" class="entry">n  &lt;leader&gt;wo→ :only (close other windows)</text>
+    <text x="14" y="112" class="entry">n,t &lt;Esc&gt;&lt;Esc&gt; → exit terminal mode</text>
+    <text x="14" y="132" class="entry">n  &lt;leader&gt;wt → new tab</text>
+    <text x="14" y="152" class="entry">n  &lt;leader&gt;wc → close tab</text>
+    <text x="14" y="176" class="entry">n  + / -   → increment / decrement under cursor</text>
+    <text x="14" y="196" class="desc">Source: init.lua, lua/custom/plugins/opencode.lua</text>
+  </g>
+
+  <!-- Column 2 -->
+  <g transform="translate(580,120)">
+    <rect class="box" x="0" y="0" width="480" height="420" rx="8"/>
+    <text x="14" y="26" class="box-heading">Search / Telescope / Finder (leader s…)</text>
+    <text x="14" y="52" class="entry">n  &lt;leader&gt;sh → help_tags (search help)</text>
+    <text x="14" y="72" class="entry">n  &lt;leader&gt;sk → show keymaps</text>
+    <text x="14" y="92" class="entry">n  &lt;leader&gt;sf → find_files (fuzzy)</text>
+    <text x="14" y="112" class="entry">n  &lt;leader&gt;ss → builtin pickers</text>
+    <text x="14" y="132" class="entry">n  &lt;leader&gt;s* → grep current word</text>
+    <text x="14" y="152" class="entry">n  &lt;leader&gt;sg → live_grep</text>
+    <text x="14" y="172" class="entry">n  &lt;leader&gt;sd → diagnostics picker</text>
+    <text x="14" y="192" class="entry">n  &lt;leader&gt;sr → resume picker</text>
+    <text x="14" y="212" class="entry">n  &lt;leader&gt;s. → recent files</text>
+    <text x="14" y="232" class="entry">n  &lt;leader&gt;st → treesitter symbols</text>
+    <text x="14" y="252" class="entry">n  &lt;leader&gt;s&lt;leader&gt; → buffers</text>
+    <text x="14" y="272" class="entry">n  &lt;leader&gt;sw → workspaces</text>
+    <text x="14" y="292" class="entry">n  &lt;leader&gt;so → Telekasten find_notes</text>
+    <text x="14" y="316" class="desc">Plus several custom search wrappers: &lt;leader&gt;/, &lt;leader&gt;s/ etc.</text>
+    <text x="14" y="334" class="desc">Source: init.lua (Telescope bindings)</text>
+  </g>
+
+  <!-- Column 1, second box -->
+  <g transform="translate(40,360)">
+    <rect class="box" x="0" y="0" width="480" height="260" rx="8"/>
+    <text x="14" y="26" class="box-heading">Window &amp; Panes</text>
+    <text x="14" y="52" class="entry">n  &lt;leader&gt;wm → WindowsMaximize</text>
+    <text x="14" y="72" class="entry">n  &lt;leader&gt;we → WindowsEqualize</text>
+    <text x="14" y="92" class="entry">n  go / goo → opencode helpers (open UI)</text>
+    <text x="14" y="112" class="entry">n  &lt;leader&gt;wo → :only (close other windows)</text>
+    <text x="14" y="132" class="desc">Source: lua/custom/plugins/windows.lua, opencode.lua</text>
+
+    <text x="14" y="162" class="box-heading">Terminal &amp; Opencode Helpers</text>
+    <text x="14" y="188" class="entry">n,x  &lt;leader&gt;o? → opencode interactive helper</text>
+    <text x="14" y="208" class="entry">n,x  &lt;leader&gt;oa → opencode action</text>
+    <text x="14" y="228" class="entry">n,t  &lt;leader&gt;oo → opencode toggle (works in term)</text>
+    <text x="14" y="248" class="desc">n  &lt;C-k&gt; / &lt;C-j&gt; → opencode custom moves</text>
+  </g>
+
+  <!-- Column 2, second box -->
+  <g transform="translate(580,560)">
+    <rect class="box" x="0" y="0" width="480" height="340" rx="8"/>
+    <text x="14" y="26" class="box-heading">LSP / Go-To / Code Actions (gr* / g* helpers)</text>
+    <text x="14" y="52" class="entry">n  grn → rename symbol (LSP)</text>
+    <text x="14" y="72" class="entry">n,x gra → code action</text>
+    <text x="14" y="92" class="entry">n  grr → find references (Telescope)</text>
+    <text x="14" y="112" class="entry">n  gri → goto implementations</text>
+    <text x="14" y="132" class="entry">n  grd → goto definition</text>
+    <text x="14" y="152" class="entry">n  grD → goto declaration</text>
+    <text x="14" y="172" class="entry">n  gO → document symbols</text>
+    <text x="14" y="192" class="entry">n  gW → workspace symbols</text>
+    <text x="14" y="212" class="entry">n  grt → type definitions</text>
+    <text x="14" y="232" class="entry">n  &lt;leader&gt;xh → toggle inlay hints</text>
+    <text x="14" y="262" class="desc">Most of these are set in LSP on_attach (buffer-local) and use Telescope wrappers.</text>
+    <text x="14" y="286" class="desc">Source: init.lua (LSP mappings)</text>
+  </g>
+
+  <!-- Column 1, third box -->
+  <g transform="translate(40,640)">
+    <rect class="box" x="0" y="0" width="480" height="260" rx="8"/>
+    <text x="14" y="26" class="box-heading">Debugging (nvim-dap)</text>
+    <text x="14" y="52" class="entry">n  &lt;Leader&gt;dl → step into</text>
+    <text x="14" y="72" class="entry">n  &lt;Leader&gt;dj → step over</text>
+    <text x="14" y="92" class="entry">n  &lt;Leader&gt;dk → step out</text>
+    <text x="14" y="112" class="entry">n  &lt;Leader&gt;dc → continue</text>
+    <text x="14" y="132" class="entry">n  &lt;Leader&gt;db → toggle breakpoint</text>
+    <text x="14" y="152" class="entry">n  &lt;Leader&gt;de → terminate</text>
+    <text x="14" y="172" class="entry">n  &lt;Leader&gt;dr → run last</text>
+    <text x="14" y="196" class="desc">Source: lua/custom/plugins/nvim-dap.lua</text>
+  </g>
+
+  <!-- Column 2, third box -->
+  <g transform="translate(580,920)">
+    <rect class="box" x="0" y="0" width="480" height="300" rx="8"/>
+    <text x="14" y="26" class="box-heading">Testing / neotest</text>
+    <text x="14" y="52" class="entry">n  &lt;leader&gt;ta → run test (nearest)</text>
+    <text x="14" y="72" class="entry">n  &lt;leader&gt;tr → run tests / re-run</text>
+    <text x="14" y="92" class="entry">n  &lt;leader&gt;td → debug test</text>
+    <text x="14" y="112" class="entry">n  &lt;leader&gt;ts → test summary / toggle</text>
+    <text x="14" y="142" class="box-heading">Rust-specific</text>
+    <text x="14" y="168" class="entry">n  K → Rust hover actions (override builtin)</text>
+    <text x="14" y="188" class="entry">n  &lt;C-k&gt; → Rust hover action plug</text>
+    <text x="14" y="208" class="entry">n  gra → Rust code actions</text>
+    <text x="14" y="228" class="entry">n  &lt;leader&gt;xe → explain Rust error</text>
+    <text x="14" y="248" class="desc">Source: lua/custom/plugins/neotest.lua, after/ftplugin/rust.lua</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="40" y="1280" class="desc">Notes: Many mappings are buffer-local (LSP on_attach). Plugin commands require the plugin to be installed.</text>
+  <text x="40" y="1300" class="desc">File references: init.lua, lua/custom/plugins/*, after/ftplugin/*</text>
+  <text x="40" y="1330" class="desc">Generated: visual cheat-sheet for quick reference.</text>
+</svg>
