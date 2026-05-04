@@ -46,107 +46,90 @@ which_key.setup {
   },
 }
 
--- Centralized which-key registrations for discoverability (flat spec)
-which_key.register({
-  -- Search group
-  { "<leader>s", group = "Search" },
-  { "<leader>sh", desc = "Help Tags" },
-  { "<leader>sk", desc = "Keymaps" },
-  { "<leader>sf", desc = "Find Files" },
-  { "<leader>ss", desc = "Telescope Pickers" },
-  { "<leader>s*", desc = "Search Current Word" },
-  { "<leader>sg", desc = "Live Grep" },
-  { "<leader>sd", desc = "Diagnostics" },
-  { "<leader>sr", desc = "Resume" },
-  { "<leader>s.", desc = "Recent Files" },
-  { "<leader>st", desc = "Treesitter" },
-  { "<leader>s<leader>", desc = "Buffers" },
-  { "<leader>sw", desc = "Workspaces" },
-  { "<leader>so", desc = "Notes" },
+which_key.add {
+  { '<leader>c', group = 'Wtf', remap = false },
+  { '<leader>cd', desc = 'Debug diagnostic with AI', remap = false },
+  { '<leader>cf', desc = 'Fix diagnostic with AI', remap = false },
+  { '<leader>cg', desc = 'Grep previous chat history with Telescope', remap = false },
+  { '<leader>ch', desc = 'Populate quickfix with previous chat history', remap = false },
+  { '<leader>cp', desc = 'Pick provider', remap = false },
+  { '<leader>cs', desc = 'Search diagnostic with Google', remap = false },
+  { '<leader>d', group = 'Debug', remap = false },
+  { '<leader>dc', desc = 'Continue', remap = false },
+  { '<leader>ddb', desc = 'Toggle Breakpoint', remap = false },
+  { '<leader>dddd', desc = 'Set conditional breakpoint', remap = false },
+  { '<leader>de', desc = 'Terminate/Reset', remap = false },
+  { '<leader>dj', desc = 'Step Over', remap = false },
+  { '<leader>dk', desc = 'Step Out', remap = false },
+  { '<leader>dl', desc = 'Step Into', remap = false },
+  { '<leader>dr', desc = 'Run Last', remap = false },
+  { '<leader>h', group = 'Git Hunk', remap = false },
+  { '<leader>hD', desc = 'Diff Against Last Commit', remap = false },
+  { '<leader>hR', desc = 'Reset Buffer', remap = false },
+  { '<leader>hS', desc = 'Stage Buffer', remap = false },
+  { '<leader>hb', desc = 'Blame Line', remap = false },
+  { '<leader>hd', desc = 'Diff Against Index', remap = false },
+  { '<leader>hp', desc = 'Preview Hunk', remap = false },
+  { '<leader>hr', desc = 'Reset Hunk', remap = false },
+  { '<leader>hs', desc = 'Stage Hunk', remap = false },
+  { '<leader>hu', desc = 'Undo Stage Hunk', remap = false },
+  { '<leader>n', group = 'Notes', remap = false },
+  { '<leader>n/', desc = 'Search Notes', remap = false },
+  { '<leader>nd', desc = 'Daily Note', remap = false },
+  { '<leader>nn', desc = 'New Note', remap = false },
+  { '<leader>nw', desc = 'Weekly Note', remap = false },
+  { '<leader>o', group = 'Opencode', remap = false },
+  { '<leader>o?', desc = 'Ask opencode...', remap = false },
+  { '<leader>oa', desc = 'Execute opencode action...', remap = false },
+  { '<leader>oo', desc = 'Toggle opencode', remap = false },
+  { '<leader>s', group = 'Search', remap = false },
+  { '<leader>s*', desc = 'Search Current Word', remap = false },
+  { '<leader>s.', desc = 'Recent Files', remap = false },
+  { '<leader>s<leader>', desc = 'Buffers', remap = false },
+  { '<leader>sd', desc = 'Diagnostics', remap = false },
+  { '<leader>sf', desc = 'Find Files', remap = false },
+  { '<leader>sg', desc = 'Live Grep', remap = false },
+  { '<leader>sh', desc = 'Help Tags', remap = false },
+  { '<leader>sk', desc = 'Keymaps', remap = false },
+  { '<leader>so', desc = 'Notes', remap = false },
+  { '<leader>sr', desc = 'Resume', remap = false },
+  { '<leader>ss', desc = 'Telescope Pickers', remap = false },
+  { '<leader>st', desc = 'Treesitter', remap = false },
+  { '<leader>sw', desc = 'Workspaces', remap = false },
+  { '<leader>t', group = 'Test', remap = false },
+  { '<leader>ta', desc = 'Run All Tests', remap = false },
+  { '<leader>td', desc = 'Debug Test', remap = false },
+  { '<leader>to', desc = 'Test Output', remap = false },
+  { '<leader>tr', desc = 'Run Test', remap = false },
+  { '<leader>ts', desc = 'Test Summary', remap = false },
+  { '<leader>w', group = 'Window', remap = false },
+  { '<leader>wc', desc = 'Close Tab', remap = false },
+  { '<leader>we', desc = 'Equalize', remap = false },
+  { '<leader>wm', desc = 'Maximize', remap = false },
+  { '<leader>wo', desc = 'Only', remap = false },
+  { '<leader>wt', desc = 'New Tab', remap = false },
+  { '<leader>x', group = 'Trouble', remap = false },
+  { '<leader>xL', desc = 'Location List', remap = false },
+  { '<leader>xQ', desc = 'Quickfix List', remap = false },
+  { '<leader>xX', desc = 'Buffer Diagnostics', remap = false },
+  { '<leader>xl', desc = 'LSP Listings', remap = false },
+  { '<leader>xs', desc = 'Symbols', remap = false },
+  { '<leader>xx', desc = 'Toggle Diagnostics', remap = false },
+}
 
-  -- Test group
-  { "<leader>t", group = "Test" },
-  { "<leader>ta", desc = "Run All Tests" },
-  { "<leader>tr", desc = "Run Test" },
-  { "<leader>td", desc = "Debug Test" },
-  { "<leader>ts", desc = "Test Summary" },
-  { "<leader>to", desc = "Test Output" },
+-- Register a few non-leader mappings for discoverability (modern spec + mode)
+which_key.add({
+  { '<C-j>', desc = 'Scroll opencode down', remap = false },
+  { '<C-k>', desc = 'Scroll opencode up', remap = false },
+  { 'go', desc = 'Add range to opencode', remap = false },
+  { 'goo', desc = 'Add line to opencode', remap = false },
+}, { mode = 'n', noremap = true })
 
-  -- Opencode group
-  { "<leader>o", group = "Opencode" },
-  { "<leader>o?", desc = "Ask opencode..." },
-  { "<leader>oa", desc = "Execute opencode action..." },
-  { "<leader>oo", desc = "Toggle opencode" },
-
-  -- Wtf (c) group
-  { "<leader>c", group = "Wtf" },
-  { "<leader>cd", desc = "Debug diagnostic with AI" },
-  { "<leader>cf", desc = "Fix diagnostic with AI" },
-  { "<leader>cs", desc = "Search diagnostic with Google" },
-  { "<leader>cp", desc = "Pick provider" },
-  { "<leader>ch", desc = "Populate quickfix with previous chat history" },
-  { "<leader>cg", desc = "Grep previous chat history with Telescope" },
-
-  -- Git Hunk (h) group
-  { "<leader>h", group = "Git Hunk" },
-  { "<leader>hs", desc = "Stage Hunk" },
-  { "<leader>hr", desc = "Reset Hunk" },
-  { "<leader>hS", desc = "Stage Buffer" },
-  { "<leader>hu", desc = "Undo Stage Hunk" },
-  { "<leader>hR", desc = "Reset Buffer" },
-  { "<leader>hp", desc = "Preview Hunk" },
-  { "<leader>hb", desc = "Blame Line" },
-  { "<leader>hd", desc = "Diff Against Index" },
-  { "<leader>hD", desc = "Diff Against Last Commit" },
-
-  -- Window (w) group
-  { "<leader>w", group = "Window" },
-  { "<leader>wm", desc = "Maximize" },
-  { "<leader>we", desc = "Equalize" },
-  { "<leader>wt", desc = "New Tab" },
-  { "<leader>wc", desc = "Close Tab" },
-  { "<leader>wo", desc = "Only" },
-
-  -- Notes (n) group
-  { "<leader>n", group = "Notes" },
-  { "<leader>nn", desc = "New Note" },
-  { "<leader>nd", desc = "Daily Note" },
-  { "<leader>nw", desc = "Weekly Note" },
-  { "<leader>n/", desc = "Search Notes" },
-
-  -- Trouble (x) group
-  { "<leader>x", group = "Trouble" },
-  { "<leader>xx", desc = "Toggle Diagnostics" },
-  { "<leader>xX", desc = "Buffer Diagnostics" },
-  { "<leader>xs", desc = "Symbols" },
-  { "<leader>xl", desc = "LSP Listings" },
-  { "<leader>xL", desc = "Location List" },
-  { "<leader>xQ", desc = "Quickfix List" },
-
-  -- Debug (d) group
-  { "<leader>d", group = "Debug" },
-  { "<leader>dl", desc = "Step Into" },
-  { "<leader>dj", desc = "Step Over" },
-  { "<leader>dk", desc = "Step Out" },
-  { "<leader>dc", desc = "Continue" },
-  { "<leader>db", desc = "Toggle Breakpoint" },
-  { "<leader>ddd", desc = "Set conditional breakpoint" },
-  { "<leader>de", desc = "Terminate/Reset" },
-  { "<leader>dr", desc = "Run Last" },
-
-  -- Leader-as-leader (double-leader) mappings
-  { "<leader><leader>q", desc = "Open diagnostic Quickfix" },
-  { "<leader><leader>f", desc = "Format buffer" },
-  { "<leader><leader>e", desc = "Open diagnostic float" },
-  { "<leader><leader>xh", desc = "Toggle inlay hints" },
-}, { noremap = true })
-
--- Register a few non-leader mappings for discoverability (flat spec + mode)
-which_key.register({
-  { "go", desc = "Add range to opencode" },
-  { "goo", desc = "Add line to opencode" },
-  { "<C-k>", desc = "Scroll opencode up" },
-  { "<C-j>", desc = "Scroll opencode down" },
-}, { mode = "n" })
+which_key.add {
+  { '<leader><leader>e', desc = 'Open diagnostic float', remap = false },
+  { '<leader><leader>f', desc = 'Format buffer', remap = false },
+  { '<leader><leader>q', desc = 'Open diagnostic Quickfix', remap = false },
+  { '<leader><leader>xh', desc = 'Toggle inlay hints', remap = false },
+}
 
 return which_key
