@@ -8,7 +8,7 @@
 ========         |.-""""""""""""""""""-.|   |-----|          ========
 ========         ||                    ||   | === |          ========
 ========         ||   KICKSTART.NVIM   ||   |-----|          ========
-========         ||                    ||   | === |          ========
+========         ||                    ||   | === |          ========https://github.com/mikavilpas/yazi.nvim
 ========         ||                    ||   |-----|          ========
 ========         ||:Tutor              ||   |:::::|          ========
 ========         |'-..................-'|   |____o|          ========
@@ -173,7 +173,7 @@ vim.o.confirm = true
 vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
 
 -- Diagnostic keymaps
-vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostic [Q]uickfix list' })
+-- Note: <leader>q mapping moved to custom whichkey configuration to avoid duplicate bindings
 
 vim.keymap.set('n', '<leader>wo', '<cmd>only<CR>', { desc = 'Close [O]ther windows' })
 -- Exit terminal mode in the builtin terminal with a shortcut that is a bit easier
@@ -296,7 +296,7 @@ require('lazy').setup({
     event = 'VimEnter', -- Sets the loading event to 'VimEnter'
     config = function()
       -- Load centralized which-key registrations from lua/custom/whichkey.lua
-      require('custom.whichkey')
+      require 'custom.whichkey'
     end,
   },
 
@@ -353,14 +353,25 @@ require('lazy').setup({
       -- [[ Configure Telescope ]]
       -- See `:help telescope` and `:help telescope.setup()`
       require('telescope').setup {
+        -- Defaults: ignore graphify-out in file-based pickers and tell rg to
+        -- skip that directory for vimgrep-based pickers.
+        defaults = {
+          file_ignore_patterns = { 'graphify%-out/', '@graphify%-out/' },
+          vimgrep_arguments = {
+            'rg',
+            '--color=never',
+            '--no-heading',
+            '--with-filename',
+            '--line-number',
+            '--column',
+            '--smart-case',
+            '--hidden',
+            '--glob', '!**/graphify-out/**',
+            '--glob', '!**/@graphify-out/**',
+          },
+        },
         -- You can put your default mappings / updates / etc. in here
         --  All the info you're looking for is in `:help telescope.setup()`
-        --
-        -- defaults = {
-        --   mappings = {
-        --     i = { ['<c-enter>'] = 'to_fuzzy_refine' },
-        --   },
-        -- },
         -- pickers = {}
         extensions = {
           ['ui-select'] = {
@@ -1081,5 +1092,8 @@ require('lazy').setup({
     },
   },
 })
+
+-- Load custom quickfix helper
+pcall(require, 'custom.qf')
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et

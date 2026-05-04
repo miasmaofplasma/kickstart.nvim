@@ -117,6 +117,24 @@ which_key.add {
   { '<leader>xx', desc = 'Toggle Diagnostics', remap = false },
 }
 
+-- Use quicker.nvim quickfix helpers directly
+local quicker = require('quicker')
+
+-- Register which-key entries for leader+q prefix and fallbacks
+-- which-key entries for quickfix (use add for consistency)
+which_key.add {
+  { '<leader>q', group = 'Quickfix', remap = false },
+  { '<leader>q<CR>', desc = 'Add current line to quickfix', remap = false },
+  { '<leader>qo', desc = 'Open quickfix', remap = false },
+  { '<leader>qq', desc = 'Close quickfix', remap = false },
+  { '<leader>qc', desc = 'Clear quickfix', remap = false },
+}
+
+-- Global fallback mappings so they work even without which-key menu
+vim.keymap.set('n', '<leader>q<CR>', quicker.add_current_line_to_qf, { noremap = true, silent = true, desc = 'Add current line to quickfix' })
+vim.keymap.set('n', '<leader>qo', quicker.open_qf, { noremap = true, silent = true, desc = 'Open quickfix' })
+vim.keymap.set('n', '<leader>qq', quicker.close_qf, { noremap = true, silent = true, desc = 'Close quickfix' })
+
 -- Register a few non-leader mappings for discoverability (modern spec + mode)
 which_key.add({
   { '<C-j>', desc = 'Scroll opencode down', remap = false },
